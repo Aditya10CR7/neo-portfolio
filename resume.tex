@@ -1,0 +1,243 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{xcolor}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\input{glyphtounicode}
+
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[
+  a4paper,
+  left=.5in,
+  right=.5in,
+  top=0.5in,
+  bottom=.5in
+]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\makeatletter
+\newcommand{\github}[1]{%
+   \href{#1}{\faGithubSquare}%
+}
+\makeatother
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\vspace{+1cm}
+\begin{center}
+    {\Huge \scshape \textbf{Aditya Pandiarajan}} \\ \vspace{1pt}
+    \small ~ \href{mailto:alnu@usc.edu}{\raisebox{-0.2\height}\faEnvelope\ \underline{\color{blue}alnu@usc.edu}} $|$\hspace{-.2cm} ~
+    \href{https://www.linkedin.com/in/aditya-pandiarajan7/}{\raisebox{-0.2\height}\faLinkedin\ \underline{\color{blue}Aditya}} $|$
+    \href{https://github.com/Aditya10CR7}{\raisebox{-0.2\height}\faGithubSquare\ \underline{\color{blue}Aditya}} $|$
+    \href{https://scholar.google.com/citations?user=UlKY2ZQAAAAJ&hl=en}{\raisebox{-0.2\height}\faGoogle\ \underline{\color{blue}Google Scholar}} $|$\hspace{-.2cm}
+    \small ~ {\raisebox{-0.2\height}\Telefon\ \underline{\color{blue}(213) 812-4871}} {} $|$\hspace{-.2cm}
+    \small ~ {Los Angeles, CA}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\large{{EDUCATION}}}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {University of Southern California}{Aug 2024 -- May 2026}
+    {Master of Science in Computer Science; CGPA: 3.6/4}{Los Angeles, USA}
+  \vspace{3pt}
+  {\small Coursework: Advance Algorithms, Database Management, Information Retrieval \& Web Search Engine}
+
+  \vspace{-10pt}
+
+  \resumeSubheading
+    {SRM University}{Aug 2020 -- May 2024}
+    {B.Tech in Computer Science and Engineering; CGPA: 9.4/10}{Chennai, IN}
+  \vspace{-2pt}
+  {\small Coursework: Operating Systems, Computer Architecture, AI \& Applications in Cloud, Data Centric Networking}
+
+\resumeSubHeadingListEnd
+
+\vspace{-17pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, Java, C++, C\#, Go, TypeScript, JavaScript, SQL} \\
+    \textbf{Backend \& APIs}{: FastAPI, Node.js, ASP.NET Core, Spring Boot, REST APIs, WebSockets} \\
+    \textbf{Frontend \& APIs}{: React, TypeScript, Tailwind CSS, REST APIs, WebSockets} \\
+    \textbf{AI \& Agents}{: OpenAI, Claude, Gemini, LangGraph, LangChain, RAG, Prompt Engineering, Tool Calling} \\
+    \textbf{Data \& Messaging}{: PostgreSQL, MongoDB, FAISS, Kafka, Redis Streams, Redis} \\
+    \textbf{Cloud \& Infrastructure}{: AWS EC2, Lambda, S3, CloudWatch, Docker, Kubernetes, CI/CD} \\
+  }}
+\end{itemize}
+
+\vspace{-17pt}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {KVS Technologies}{Jul 2025 -- Present}
+    {Software Engineering Intern, Applied AI Systems}{Marietta, GA}
+    \vspace{-10pt}
+  \resumeItemListStart
+    \resumeItem{Translated \textbf{client demo requirements} into a real-time image-to-insight workflow, enabling a new AI-powered feature through FastAPI, Claude vision models, and SerpAPI-based retrieval.}
+    \resumeItem{Processed \textbf{10K+ product workflow} events/day by building a Kafka and Redis Streams event pipeline for user activity tracking, metadata synchronization, and asynchronous AI job execution.}
+    \resumeItem{Reduced \textbf{chatbot inference costs} by 30\% while stabilizing p95 latency by implementing prompt-level caching, complexity-based model routing, and provider fallback tracing.}
+  \resumeItemListEnd
+  \vspace{2pt}
+
+  \resumeSubheading
+    {USC Information Sciences Institute}{Nov 2024 -- Jun 2025}
+    {Backend Engineering Intern, Agentic Systems}{Los Angeles, CA}
+    \vspace{-10pt}
+  \resumeItemListStart
+    \resumeItem{Built a LangGraph-based human-in-the-loop workflow for \textbf{ad-spend optimization}, reducing risky autonomous budget changes by requiring manager approval before executing AI-recommended shifts.}
+    \resumeItem{Improved \textbf{backend throughput} by 47\% under high-concurrency workloads by optimizing C\# async execution and batching PostgreSQL queries to reduce duplicate reads and database contention.}
+    \resumeItem{Improved \textbf{post-launch stability} of backend services by containerizing workloads with Docker, adding Kubernetes health checks and rolling updates, and automating releases through CI/CD pipelines.}
+  \resumeItemListEnd
+  \vspace{2pt}
+
+  \resumeSubheading
+    {Indian Institute of Technology, Roorkee}{Jun 2023 -- Aug 2023}
+    {Software Engineer Intern, AI \& Data Systems}{Roorkee, India}
+    \vspace{-10pt}
+  \resumeItemListStart
+    \resumeItem{Partnered with engineering stakeholders to evaluate \textbf{fine-tuning versus prompt-based RAG} for specification queries, selecting hybrid retrieval after comparing citation traceability and hallucination risk.}
+    \resumeItem{Improved \textbf{frontend update latency} by building a TypeScript and Tailwind frontend backed by WebSocket streams, enabling real-time updates from backend processing workflows.}
+    \resumeItem{Improved \textbf{backend integration reliability} by designing Node.js REST APIs with schema validation, structured data models, and error handling to reduce malformed workflow requests.}
+  \resumeItemListEnd        
+
+\resumeSubHeadingListEnd
+
+\vspace{-11pt}
+
+%-----------PROJECTS & PUBLICATIONS-----------
+\section{SELECTED PROJECTS, OPEN SOURCE AND PUBLICATIONS}
+\vspace{-8pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Banking Compliance RAG Evaluator} $|$ \emph{Python, Ragas, LangChain, OpenAI, FAISS}}{Jan 2026}
+  \resumeItemListStart
+    \resumeItem{Built a Ragas-based evaluation harness for banking policy QA, benchmarking chunk sizes, top-k retrieval, and prompt variants using faithfulness, answer relevancy, context precision, and context recall.}
+    \resumeItem{Created a golden test set of compliance questions to detect hallucinated answers and weak retrieval paths.}
+  \resumeItemListEnd
+
+  \vspace{-15pt}
+
+ \resumeProjectHeading
+    {\textbf{Secure-Ops: Multi-Tenant HR \& Payroll Agent} $|$ \emph{FastAPI, LangGraph, PostgreSQL, JWT, Presidio}}{Jan 2026}
+  \resumeItemListStart
+    \resumeItem{Built a multi-tenant HR/payroll agent with JWT auth, RBAC middleware, and tenant-scoped LangGraph tools to enforce role-based access across salary, benefits, and employee-record workflows.}
+    \resumeItem{Implemented permission guards and PII redaction with role-aware PostgreSQL filters and Presidio.}
+  \resumeItemListEnd
+
+  \vspace{-15pt}
+
+  \resumeProjectHeading
+    {\textbf{Publications:}}{}
+  \resumeItemListStart
+    \resumeItem{A Comparative Analysis on Ophthalmology Board-Style Questions. \emph{IEEE Nature Publishing Group UK 2025}.}
+    \resumeItem{Analysing Migraine Patterns Using Ensemble Learning. \emph{IEEE IconDeepCom 2024}.}
+    \resumeItem{BlockFund -- Leveraging Escrow and Milestone Algorithm for Secure Crowdfunding. \emph{IEEE ICIMIA 2023}.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-12.5pt}
+
+%-----------HONORS & AWARDS-----------
+\section{HONORS AND AWARDS}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+    \textbf{Merit-Based Scholarship Recipient,} {awarded to the top 0.1\% of students at the university for outstanding academic excellence combined with notable achievements in sports and extra-curricular.}\\
+
+    \textbf{Kavach All-India Hackathon Runner-Up,} {developed a real-time license plate detection system to automate parking validation and streamline vehicle-based payment workflows.}\\
+
+    \textbf{AI Tutor Hackathon Second Runner-Up (USC),} {developed an intelligent tutoring system for all aged-students.}
+  }}
+\end{itemize}
+
+\end{document}
