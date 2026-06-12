@@ -1,6 +1,8 @@
 // Centralized portfolio data for Aditya Pandiarajan
 // Source: resume.tex and linkedin.md
 
+import profileImageUrl from "../../../image/about-profile.jpg";
+
 export const portfolioData = {
   // Personal Information
   personal: {
@@ -10,7 +12,7 @@ export const portfolioData = {
     email: "adityapandiarajan7@gmail.com",
     phone: "(213) 812-4871",
     location: "Los Angeles, CA",
-    profileImage: "/about-profile.jpg",
+    profileImage: profileImageUrl,
   },
 
   // About
