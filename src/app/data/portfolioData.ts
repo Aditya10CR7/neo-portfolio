@@ -2,6 +2,7 @@
 // Source: resume.tex and linkedin.md
 
 import profileImageUrl from "../../../image/about-profile.jpg";
+import resumeUrl from "../../../image/aditya-resume.pdf";
 
 export const portfolioData = {
   // Personal Information
@@ -51,7 +52,7 @@ export const portfolioData = {
 
   // Resume Download
   resume: {
-    url: "/resume.pdf",
+    url: resumeUrl,
     label: "Resume",
   },
 
